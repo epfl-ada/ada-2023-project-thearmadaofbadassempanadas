@@ -13,28 +13,85 @@ During this quest for the ideal path to achieve my dream, my team of data analys
 ## Methods
 
 
+
 ## Proposed timeline
-Week 9: 
-- Data cleaning
-- Film categorization
-- First analysis toward each axis of our project
-- P2 deliverable
-  
-Week 10:
-- NLP pipeline for plot summaries
-  
-Week 11: 
+In order to start my carreer as soon as possible to enter the world of film industry, I fixed some milestones to my team:
 
-Week 12:
+<table class="tg" style="table-layout: fixed; width: 342px">
+<colgroup>
+<col style="width: 16px">
+<col style="width: 180px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0lax">Week</th>
+    <th class="tg-0lax">Milestones</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax"> Data cleaning <br> Film categorization into geographical areas <br> First analysis toward each axis of our project <br> P2 deliverable </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax"> <em>Team in vacation (Work on Homework 2)<em> </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax"> <em>Team in vacation (Deadline Homework 2)<em> </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax"> Finish NLP pipeline <br> Start HTML website </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax"> Data story </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">14</td>
+    <td class="tg-0lax"> Finish HTLM <br> Clean repository
+  </tr>
+</tbody>
+</table>
 
-Week 13:
-
-Week 14:
-- Notebook cleaning
-- Data story writing
-- P3 deliverable
 
 ## Organization within the team
 As I guide my team of data analysts to pave the way for my success in the film industry, we divided the workload to maximize efficiency.
+<table class="tg" style="table-layout: fixed; width: 342px">
+<colgroup>
+<col style="width: 16px">
+<col style="width: 180px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0lax">Data Analyst</th>
+    <th class="tg-0lax">Tasks</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Flore</td>
+    <td class="tg-0lax"> Preprocessing (grouping movies) <br> Ethicity in movies </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Justine</td>
+    <td class="tg-0lax"> Revenue in industries </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Lola</td>
+    <td class="tg-0lax"> Female representation </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Chléa</td>
+    <td class="tg-0lax"> NLP pipeline <br> Data story and README </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Léon</td>
+    <td class="tg-0lax"> Cleaning data and scrapping <br> Actor interconnection
+  </tr>
+</tbody>
+</table>
 
 ## Questions for TAs (optional)
