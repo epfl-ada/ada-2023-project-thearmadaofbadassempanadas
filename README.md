@@ -100,7 +100,3 @@ To efficiently navigate my path to success in the film industry, our team roles 
 | Lola | Investigation of female representation |
 | Chléa | Overseeing NLP pipeline <br> Crafting data story and README |
 | Léon | Data cleaning and scrapping <br> Analysis of actor interconnection |
-
-## Questions for TAs
-
-
