@@ -13,22 +13,68 @@ In my quest to find out the ideal career path, I, together with my data analysis
 
 ## Methods
 
-**Part 1: Data exploration**
-1. **Data cleaning:** TODO 
-1. **Movie grouping:** Data exploration, Scrapping movies' country, Group by geographic area TODO
-1. **First data exploration and visualization:** Study different axis using movies and characters metadata.
-1. **NLP pipeline:** the plot summaries of each movie could be analyzed to gain further insights on each film industry. This process could be used as an additional tool for the different analysis axes of the project, by performing different types of text processing. We first use sentiment analysis using the stanza package to assign a sentiment score to each sentence (0 for negative, 1 for neutral, 2 for positive). Each plot summary is then a list of sentiment scores of each sentence, highlighting the global emotional tone. Stanza also allows to get word representations. Then, we will also extract more sophisticated emotional tones using the NRCLex package. We can also push further by using aspect-based sentiment analysis to get the sentiment score of specified topics, like female relative words, using aspect-based-sentiment-analysis package. This code has been run on google colab to take advantage of the free GPU running.
-    
-**Part 2: Data analysis to answer our scientific questions**
-1. **Film revenue:** TODO
-1. **Gender representation:** TODO
-1. **Ethnicity:** TODO
-1. **Linking between actors:** TODO
+### **Step 1: Data cleaning**
+1. **Data exploration for countries:**
 
-**Part 3: Generalization and story telling**
-1. **Answer our questions** based on the results of analysis
-2. **ML classification:** build a ML model to assign an actor to its best matching industry based on its features
-3. **Comparison:** compare the results of manual and automatic analysis
+The overarching aim of this step is to conduct a comparative analysis of the film industries from four globally distinct regions:
+- *East Asia:* Japan, Hong Kong, China, South Korea, Taiwan
+- *Western Europe:* United Kingdom, France, Italy, Germany, Spain, West Germany, Belgium, German Democratic Republic, Ireland, Switzerland, Austria, England, Luxembourg, Portugal
+- *Northern America:* United States of America, Canada
+- *India and Pakistan*
+  
+The main activity is to categorize each film by its corresponding global region. During our initial examination of the movie database, we noticed that some films were connected to multiple countries. Our approach to resolve this included:
+- Assigning films linked to a single country to the appropriate global region. Films not fitting into our specified regions were excluded.
+- For films connected to several countries within the same region, we allocated them to that specific global area.
+- In cases where films were linked to countries across different regions, we utilized the Wikipedia API to obtain the necessary details.
+
+This process allowed us to effectively sort movies into the four major world regions, setting the stage for subsequent in-depth analysis and comparisons.
+
+2. **Country information extraction**
+
+Our task focused on determining the actual production countries of films in the dataset, a necessity due to the lack of clarity in the 'countries' column. We utilized the Wikipedia API for this purpose. Given that over 14,000 movies lacked clear country identification, this endeavor required more than 8 hours of dedicated effort. The primary aim was to retain these films in our dataset, avoiding their exclusion while we conduct other forms of data cleaning.
+
+3. **Plot summary extraction:**
+
+The CMU movie summary corpus contains a supplement, containing Standford CoreNLP-processed summaries. In order to include informations from the summaries into our analysis, we need to extract those data. The raw supplement dataset is composed of a zipped folder for each movie, containing an XML file with the results of the NLP analysis. We first extract the zipped folder, and then move the xml files in a centralized folder. Due to the large size of this supplementary dataset, we decided not to add these files to the repository. Therefore, to run the script you need to add the folder containing all the zipped folders at the level of the cloned repository, and then to run the part 1.3. to extract all files.
+    
+### **Step 2: Data exploration and visualization**
+
+1. **Film revenue:**
+
+We looked at the proportion of missing data over the different geographical areas, and over the years. This led us to discard this feature from our analysis given the lack of data.
+
+2. **Movie genres:**
+
+Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas.
+
+3. **gender representation:**
+
+Based on the characters document, we started by cleaning the data from NaN values for relevant features only, as to avoid over-sanitizing our data. We then completed the data with the geographic region and year of release from the movies dataset. Finally, we subsetted the data by gender, allowing us to compare their entries but also their repartition over time and regions with plots, to get a first idea.  
+
+4. **Ethnicity:**
+
+First we identified the proportion of missing data for actor ethnicities in our four different regions. We observe a large proportion of missing values, but due to resource constraints, we decided to remove them instead of attempting to scrape the absent actor ethnicities.  After having retrieved the ethnicity labels corresponding to the ethnicity Freebase ID we visualized how the ethnicity diversity evolves across the different regions of the world.
+
+5. **NLP:**
+
+This part is separated into two methods. The first is to use the supplementary dataset by parsing the xml files containing the results of the CoreNLP analysis. The analysis has been performed for one summary first and will be generalized to all summaries for the next milestone. This allows to extract word features, dependencies between words and coreference within the text.
+The second part aims to apply sentiment analysis to the summaries. This could be useful for the previous analyses, for exemple to extract sentiment of female-related terms using aspect-based sentiment analysis.
+
+### **Step 3: Analysis and industry benchmarking**
+1. **Comparison of film industries:**
+
+Our analysis aims to distill key trends in the film industry using statistical and graphical methods. We'll focus on understanding the elements driving success in various regions. Key components of our approach include:
+- Genre analysis: Examine the intrinsic traits of the film industry within different geographic regions. The objective is to evaluate how cultural nuances influence and are reflected in the genres of produced films, aiming to identify the most viable genre for employment within a specific region. To do so we will explore the prominence of different genres in different regions, but also explore the variety and range of genres prevalent in a region. We should also study the progression of genre accross time to reveal industry trends.
+- Diversity Mapping: Assessing gender and ethnicity within the industry's actors and crew to understand the representation landscape in different film markets.
+- Correlate genre prominence across regions with the gender and ethnicity of lead roles. This could involve statistical breakdowns of genres by gender and ethnicity representation. For instance, are certain genres more inclusive or biased towards specific genders or ethnicities? Does those difference follow the same trends accross the different regions?
+
+2. **Actor network analysis:**
+
+An additional aspect involves mapping the connections between actors using graphical representations. This will help us understand the influence of actors in the industry, particularly those involved in high-grossing films. We'll also examine actor clusters who have appeared together in films. This stage intends to explore whether the trends we've observed align with the networks of influential actors.
+
+3. **Forecasting optimal industry for actors:**
+
+To push further our project of charting a path to cinematic success, we propose to build a machine learning model to assign an actor to its best matching industry based on its wishes and personnal features.
 
 ## Proposed timeline
 
@@ -36,11 +82,11 @@ In order to start my carreer as soon as possible to enter the world of film indu
 
 | Week | Milestones |
 | --- | --- |
-| 9 | Data cleaning <br> Categorization of films by geographical areas <br> Initial analysis on project dimensions <br> P2 deliverable |
+| 9 | Data cleaning <br> Categorization of films by geographical areas <br> Initial analysis on project dimensions <br> Exploration of NLP for summaries <br> P2 deliverable |
 | 10 | <em>Team in vacation (Work on Homework 2)<em> |
 | 11 | <em>Team in vacation (Deadline Homework 2)<em> |
-| 12 | Completion of NLP pipeline <br> initiation of HTML website |
-| 13 | Development of data story |
+| 12 | Completion of NLP pipeline <br> Continue analyses on the different projet dimensions <br> Implementation of the ML model <br> Initiation of HTML website |
+| 13 | Finish data analysis <br> Results analysis <br> Development of data story |
 | 14 | Finalizing HTML <br> Repository cleanup |
 
 ## Organization within the team
