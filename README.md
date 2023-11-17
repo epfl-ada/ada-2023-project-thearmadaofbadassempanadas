@@ -96,7 +96,7 @@ To efficiently navigate my path to success in the film industry, our team roles 
 | Data Analyst | Tasks |
 | --- | --- |
 | Flore | Preprocessing (movie grouping) <br> Analysis of ethnicity in movies |
-| Justine | Study of revenue across industries |
+| Justine | Study of revenue and genres across industries |
 | Lola | Investigation of female representation |
 | Chléa | Overseeing NLP pipeline <br> Crafting data story and README |
 | Léon | Data cleaning and scrapping <br> Analysis of actor interconnection |
