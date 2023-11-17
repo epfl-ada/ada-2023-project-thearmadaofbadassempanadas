@@ -3,3 +3,4 @@ venv/
 lib/
 *.ctrl
 apicache-py3/
+*NLP_summaries/
