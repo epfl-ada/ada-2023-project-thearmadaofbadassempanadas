@@ -20,7 +20,7 @@ The overarching aim of this step is to conduct a comparative analysis of the fil
 - *East Asia:* Japan, Hong Kong, China, South Korea, Taiwan
 - *Western Europe:* United Kingdom, France, Italy, Germany, Spain, West Germany, Belgium, German Democratic Republic, Ireland, Switzerland, Austria, England, Luxembourg, Portugal
 - *Northern America:* United States of America, Canada
-- *India and Pakistan*
+- *India:* India and Pakistan
   
 The main activity is to categorize each film by its corresponding global region. During our initial examination of the movie database, we noticed that some films were connected to multiple countries. Our approach to resolve this included:
 - Assigning films linked to a single country to the appropriate global region. Films not fitting into our specified regions were excluded.
@@ -103,4 +103,4 @@ To efficiently navigate my path to success in the film industry, our team roles 
 
 ## Questions for TAs
 
-TODO
+
