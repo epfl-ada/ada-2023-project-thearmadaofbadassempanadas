@@ -47,7 +47,7 @@ We looked at the proportion of missing data over the different geographical area
 
 2. **Movie genres:**
 
-Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas.
+Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas. The dataset offered a rich array of movie genres, including highly specific and distinct ones. The initial movie genres were grouped into broader categories, covering multiple sub-genres. This clustering process utilized pre-existing word embeddings and clustering techniques. Additionally, movies accounting for less than 2% of the total collection were consolidated under an Others category to simplify of representation of this huge variety of genres. 
 
 3. **Gender representation:**
 
@@ -67,9 +67,9 @@ The second part aims to apply sentiment analysis to the summaries. This could be
 1. **Comparison of film industries:**
 
 Our analysis aims to distill key trends in the film industry using statistical and graphical methods. We'll focus on understanding the elements driving success in various regions. Key components of our approach include:
-- Genre analysis: Examine the intrinsic traits of the film industry within different geographic regions. The objective is to evaluate how cultural nuances influence and are reflected in the genres of produced films, aiming to identify the most viable genre for employment within a specific region. To do so we will explore the prominence of different genres in different regions, but also explore the variety and range of genres prevalent in a region. We should also study the progression of genre accross time to reveal industry trends.
 - Diversity Mapping: Assessing gender and ethnicity within the industry's actors and crew to understand the representation landscape in different film markets.
-- Correlate genre prominence across regions with the gender and ethnicity of lead roles. This could involve statistical breakdowns of genres by gender and ethnicity representation. For instance, are certain genres more inclusive or biased towards specific genders or ethnicities? Does those difference follow the same trends accross the different regions?
+- Genre analysis: Examine the intrinsic traits of the film industry within different geographic regions. The aim is to pinpoint the most promising genre for employment within each region by uncovering the predominant genre, which holds the largest share of movies. Additionally, we delve into the evolution of genres over time, examining whether industry trends have influenced the prevalence of these top genres.
+- Demographic breakdown of lead roles within a prevalent genre:  Focusing on drama movies, we explore potential variations in gender representation and actresses' ages across these regions.
 
 2. **Actor network analysis:**
 
