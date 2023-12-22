@@ -76,8 +76,12 @@ An additional aspect involves mapping the connections between actors using graph
 
 3. **Forecasting optimal industry for actors:**
 
-To push further our project of charting a path to cinematic success, we propose to build a machine learning model to assign an actor to its best matching industry based on its wishes and personnal features.
-
+To push further our project of charting a path to cinematic success, we build a machine learning model to assign an actor to its best matching industry. The objective of this model is to determine the most suitable region for an actor, taking into account factors we alreasy analysed:
+- Targeted earnings
+- Preferred genre of movies
+- Ethnic background
+- Gender
+  
 ## Proposed timeline
 
 In order to start my carreer as soon as possible to enter the world of film industry, I fixed some milestones to my team:
