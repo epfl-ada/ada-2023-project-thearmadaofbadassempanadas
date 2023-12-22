@@ -59,8 +59,8 @@ First we identified the proportion of missing data for actor ethnicities in our 
 
 5. **NLP:**
 
-This part is separated into two methods. The first is to use the supplementary dataset by parsing the xml files containing the results of the CoreNLP analysis. The analysis has been performed for one summary first and will be generalized to all summaries for the next milestone. This allows to extract word features, dependencies between words and coreference within the text.
-The second part aims to apply sentiment analysis to the summaries. This could be useful for the previous analyses, for exemple to extract sentiment of female-related terms using aspect-based sentiment analysis.
+This part is separated into two methods. The first is to use the supplementary dataset by parsing the xml files containing the results of the CoreNLP analysis. This allows to extract word features, dependencies between words and coreference within the text.
+The second part aims to apply sentiment analysis to the summaries. This could be useful for the previous analyses, for exemple to extract sentiment of female-related terms using aspect-based sentiment analysis. From these two methods, we built an analysis pipeline to extract information based on a defined vocabulary, here female-related vocabulary.
 
 ### **Step 3: Analysis and industry benchmarking**
 
@@ -101,5 +101,5 @@ To efficiently navigate my path to success in the film industry, our team roles 
 | Flore | Preprocessing (movie grouping) <br> Analysis of ethnicity in movies <br> Predictive model |
 | Justine | Study of revenue and genres across industries |
 | Lola | Investigation of female representation |
-| Chléa | Overseeing NLP pipeline <br> Crafting data story and README |
+| Chléa | Building NLP pipeline <br> Crafting data story and README |
 | Léon | Data cleaning and scrapping <br> Analysis of actor interconnection <br> Website development |
