@@ -9,21 +9,25 @@ As a woman with a deep passion for cinema, I aspire to become a celebrated actre
 ## Research Questions
 
 In my quest to find out the ideal career path, I, together with my data analysis team, seek answers to these pivotal questions:
+
 - How does gender and ethnicity representation vary across different film industries, and what role can I play in enhancing gender equality in my chosen region?
 - How is the network of actors, directors, and industry players structured in various regions, and how does this influence individual success?
 
 ## Methods
 
 ### **Step 1: Data cleaning**
+
 1. **Data exploration for countries:**
 
 The overarching aim of this step is to conduct a comparative analysis of the film industries from four globally distinct regions:
+
 - *East Asia:* Japan, Hong Kong, China, South Korea, Taiwan
 - *Western Europe:* United Kingdom, France, Italy, Germany, Spain, West Germany, Belgium, German Democratic Republic, Ireland, Switzerland, Austria, England, Luxembourg, Portugal
 - *Northern America:* United States of America, Canada
 - *India:* India and Pakistan
   
 The main activity is to categorize each film by its corresponding global region. During our initial examination of the movie database, we noticed that some films were connected to multiple countries. Our approach to resolve this included:
+
 - Assigning films linked to a single country to the appropriate global region. Films not fitting into our specified regions were excluded.
 - For films connected to several countries within the same region, we allocated them to that specific global area.
 - In cases where films were linked to countries across different regions, we utilized the Wikipedia API to obtain the necessary details.
@@ -46,7 +50,7 @@ We looked at the proportion of missing data over the different geographical area
 
 2. **Movie genres:**
 
-Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas. The dataset offered a rich array of movie genres, including highly specific and distinct ones. The initial movie genres were clustered into broader categories, covering multiple sub-genres, with the help of pre-existing word embeddings. Additionally, movies accounting for less than 2% of the total collection were consolidated under an *Others* category to simplify the representation of this huge variety of genres. 
+Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas. The dataset offered a rich array of movie genres, including highly specific and distinct ones. The initial movie genres were clustered into broader categories, covering multiple sub-genres, with the help of pre-existing word embeddings. Additionally, movies accounting for less than 2% of the total collection were consolidated under an *Others* category to simplify the representation of this huge variety of genres.
 
 3. **Gender representation:**
 
@@ -66,7 +70,8 @@ The second part aims to apply sentiment analysis to the summaries. This could be
 1. **Comparison of film industries:**
 
 Our analysis aims to distill key trends in the film industry using statistical and graphical methods. We'll focus on understanding the elements driving success in various regions. Key components of our approach include:
-- Diversity Mapping: Assessing gender and ethnicity within the industry's actors and crew to understand the representation landscape in different film markets.
+
+- Diversity Mapping: Assessing gender and ethnicity repartition within the industry's actors and crew to understand the representation landscape in different film markets. 
 - Genre analysis: Examine the intrinsic traits of the film industry within different geographic regions. The aim is to pinpoint the most promising genre for employment within each region by uncovering the predominant genre, which holds the largest share of movies. Additionally, we delve into the evolution of genres over time, examining whether industry trends have influenced the prevalence of these top genres.
 - Demographic breakdown of lead roles within a prevalent genre:  Focusing on drama movies, we explore potential variations in gender representation and actresses' ages across these regions.
 
@@ -77,6 +82,7 @@ An additional aspect involves mapping the connections between actors using graph
 3. **Forecasting optimal industry for actors:**
 
 To push further our project of charting a path to cinematic success, we build a machine learning model to assign an actor to its best matching industry. The objective of this model is to determine the most suitable region for an actor, taking into account factors we alreasy analysed:
+
 - Targeted earnings
 - Preferred genre of movies
 - Ethnic background
