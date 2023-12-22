@@ -1,5 +1,7 @@
 # Charting a path to cinematic success 
 
+Here is the link to our [storytelling website](https://chlea38.github.io/ada-website).
+
 ## Abstract
 
 As a woman with a deep passion for cinema, I aspire to become a celebrated actress and make a lasting impact in the film industry. My journey, guided by strong values and ambition, takes a unique path through the enchanting world of cinema, each region sparkling with its own distinct characteristics. Accompanied by a skilled team of data analysts, I navigate the cinematic landscape like a treasure map, seeking fame and impact. My goals are twofold: achieving personal success and advocating for female representation and equal opportunities in cinema. We explore the diverse landscape of the world's film industries, from Hollywood's glamour to Europe's cultural heritage and the dynamic energy of Bollywood in Asia, seeking to pinpoint where the most promising prospects for wealth, achievement, and fellowship are found.
@@ -47,7 +49,7 @@ We looked at the proportion of missing data over the different geographical area
 
 Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas.
 
-3. **gender representation:**
+3. **Gender representation:**
 
 Based on the characters document, we started by cleaning the data from NaN values for relevant features only, as to avoid over-sanitizing our data. We then completed the data with the geographic region and year of release from the movies dataset. Finally, we subsetted the data by gender, allowing us to compare their entries but also their repartition over time and regions with plots, to get a first idea.  
 
@@ -61,6 +63,7 @@ This part is separated into two methods. The first is to use the supplementary d
 The second part aims to apply sentiment analysis to the summaries. This could be useful for the previous analyses, for exemple to extract sentiment of female-related terms using aspect-based sentiment analysis.
 
 ### **Step 3: Analysis and industry benchmarking**
+
 1. **Comparison of film industries:**
 
 Our analysis aims to distill key trends in the film industry using statistical and graphical methods. We'll focus on understanding the elements driving success in various regions. Key components of our approach include:
@@ -95,8 +98,8 @@ To efficiently navigate my path to success in the film industry, our team roles 
 
 | Data Analyst | Tasks |
 | --- | --- |
-| Flore | Preprocessing (movie grouping) <br> Analysis of ethnicity in movies |
+| Flore | Preprocessing (movie grouping) <br> Analysis of ethnicity in movies <br> Predictive model |
 | Justine | Study of revenue and genres across industries |
 | Lola | Investigation of female representation |
 | Chléa | Overseeing NLP pipeline <br> Crafting data story and README |
-| Léon | Data cleaning and scrapping <br> Analysis of actor interconnection |
+| Léon | Data cleaning and scrapping <br> Analysis of actor interconnection <br> Website development |
