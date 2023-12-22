@@ -47,7 +47,7 @@ We looked at the proportion of missing data over the different geographical area
 
 2. **Movie genres:**
 
-Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas. The dataset offered a rich array of movie genres, including highly specific and distinct ones. The initial movie genres were grouped into broader categories, covering multiple sub-genres. This clustering process utilized pre-existing word embeddings and clustering techniques. Additionally, movies accounting for less than 2% of the total collection were consolidated under an Others category to simplify of representation of this huge variety of genres. 
+Once we checked that the quantity of missing data is minime, we removed it. We then had a quick overview of the distribution of movie genres across the different geographical areas. The dataset offered a rich array of movie genres, including highly specific and distinct ones. The initial movie genres were clustered into broader categories, covering multiple sub-genres, with the help of pre-existing word embeddings. Additionally, movies accounting for less than 2% of the total collection were consolidated under an *Others* category to simplify the representation of this huge variety of genres. 
 
 3. **Gender representation:**
 
