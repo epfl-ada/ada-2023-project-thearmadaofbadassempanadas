@@ -88,9 +88,9 @@ To push further our project of charting a path to cinematic success, we build a 
 - Ethnic background
 - Gender
   
-## Proposed timeline
+## Project timeline
 
-In order to start my carreer as soon as possible to enter the world of film industry, I fixed some milestones to my team:
+In order to start my carreer as soon as possible to enter the world of film industry, I fixed some milestones to my team, that they successfully respected:
 
 | Week | Milestones |
 | --- | --- |
