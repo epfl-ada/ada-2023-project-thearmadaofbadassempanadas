@@ -10,7 +10,6 @@ As a woman with a deep passion for cinema, I aspire to become a celebrated actre
 
 In my quest to find out the ideal career path, I, together with my data analysis team, seek answers to these pivotal questions:
 - How does gender and ethnicity representation vary across different film industries, and what role can I play in enhancing gender equality in my chosen region?
-- What are the patterns of wealth and success in the global film industries, and which regions provide the most favorable environment for financial prosperity and passion in acting?
 - How is the network of actors, directors, and industry players structured in various regions, and how does this influence individual success?
 
 ## Methods
